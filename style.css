@@ -8,6 +8,9 @@ body{
     height:100vh;
     overflow: hidden;
 }
+.hamburger{
+    display: none;
+}
 .centerlogo{
     /* border:1px solid red; */
     background:transparent;
@@ -77,6 +80,8 @@ body{
     width:98px;
     height:34px;
 }
+
+
 /* .images-container{
    border:1px solid white;
    display:flex;
@@ -518,3 +523,66 @@ margin-right:161px;
   }
  
   
+
+  @media screen and (max-width: 768px) {
+    .nav{
+        /* border:1px solid red; */
+        display:flex;
+        justify-content: space-around;
+    }
+    .icons{
+        margin-right:3rem;
+    }
+    .centerlogo img{
+        /* border:1px solid red; */
+        width:200px;
+        height: 200px
+    }
+    .textcontent{
+        width:auto;    
+        display:flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;
+        /* border:1px solid white; */
+    }
+    .textcontent h1{
+        font-size:2rem;
+    }
+    .exploretext{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* border:1px solid red; */
+       
+    }
+    .devicestext{
+        /* border:1px solid red; */
+        display:flex;
+        flex-direction:column;
+        row-gap:30px;
+    }
+    .questions{
+        display:flex;
+        flex-direction: column;
+    }
+    .Faqheading{
+        display: flex;
+        flex-direction: column;
+    }
+    .planheading{
+        display:flex;
+        flex-direction: column;
+    }
+    .plansection{
+        display:flex;
+        flex-direction: column;
+    }
+    .upper{
+        display:flex;
+        justify-content:space-around;
+        gap:2rem;
+    }
+}
